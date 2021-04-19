@@ -42,8 +42,9 @@ class EventAdapter constructor(var events: ArrayList<Event>,
         fun bind(event: Event, listener: EventListener_) {
             itemView.tag = event
 
+            (" @ " + event.event_date).also { itemView.eventDandT.text = it }
             itemView.txt_event_title.text = event.event_name
-            itemView.txt_num_participants.text = "1" //TODO: WHEN CHANGED TO ARRAYLIST OF MEMBERS, ADD COUNT HERE
+            "Participants: 1".also { itemView.txt_num_participants.text = it } //TODO: WHEN CHANGED TO ARRAYLIST OF MEMBERS, ADD COUNT HERE
             itemView.event_card.setCardBackgroundColor(Color.parseColor(event.event_color))
         }
     }
