@@ -31,12 +31,12 @@ class MainApp : WearableActivity() {
         setAmbientEnabled()
 
         txtViewEvents.setOnClickListener{
-//            startActivity(intentFor<EventsActivity>())
+            startActivity(Intent(this, EventsActivity::class.java))
         }
         txtViewMeetings.setOnClickListener{
             startActivity(Intent(this, MeetingsActivity::class.java))
         }
-        txtViewEvents.setOnClickListener{
+        txtViewReminders.setOnClickListener{
             startActivity(Intent(this, RemindersActivity::class.java))
         }
     }
