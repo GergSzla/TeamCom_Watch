@@ -56,7 +56,6 @@ class RemindersActivity : WearableActivity(), ReminderListener {
                                 // To align the edge children (first and last) with the center of the screen
                                 isEdgeItemsCenteringEnabled = false
 
-
                                 layoutManager = WearableLinearLayoutManager(this@RemindersActivity)
                             }
 
